@@ -4,20 +4,31 @@
       <Superheroes
         v-bind:superheroes="superheroes"
       />
+      <SuperheroDetail
+        v-bind:superhero="selected"/>
     </div>
 </template>
 
 <script>
 import Superheroes from './components/Superheroes';
 import superheroes from './superhero-data';
+import SuperheroDetail from './components/SuperheroDetail';
+
 export default {
     data() {
         return {
-            superheroes
+            superheroes,
+            selected: null
         };
     },
     components: {
-        Superheroes
+        Superheroes,
+        SuperheroDetail
+    },
+    methods: {
+        handleSelect(superhero) {
+            this.selected = superhero;
+        }
     }
   
 };

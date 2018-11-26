@@ -6,7 +6,7 @@
             <p>Location: {{superhero.location}}</p>
             <p>Powers: {{superhero.powers}}</p>
         </div>
-        
+        <div v-else>Click on a superhero to view their details</div>
     </section>
 </template>
 
