@@ -1,9 +1,11 @@
 <template>
     <ul class="dogs"> 
-      <li v-for="dogs in dogs"
-          v-bind:class="{ dogs: true, selected: dogs === selected }"
-          v-bind:key="dogs.name">
-        <img v-bind:src="dogs.image"> 
+      <li v-for="dog in dogs"
+          v-bind:class="{ dogs: true, selected: dog === selected }"
+          v-bind:key="dog.name">
+          v-on:click="onSelect(dog)">
+        <img v-bind:src="dog.image"> 
+        <h3>{{dog.name}} who is {{dogs.description}}</h3>
       </li>
     </ul>
 </template>
@@ -12,6 +14,8 @@
 export default {
     props: {
         dogs: Array, 
+        selected: Object,
+        onSelect: Function
     }
 };
 </script>
@@ -30,6 +34,9 @@ export default {
     text-align: center;
     margin-right: 3px;
     cursor: pointer;
+}
+.pirate h3 {
+    text-shadow: 1px 1px 1px black;
 }
 .dogs img {
     height: 70%;

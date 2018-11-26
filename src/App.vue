@@ -1,13 +1,16 @@
 <template>
     <div id="app"> 
         <Dogs 
-            v-bind:dogs="dogs"/>
+            v-bind:dogs="dogs"
+            v-bind:selected="selected"
+            v-bind:onSelect="handleSelect"/>
+
     </div>
 </template>
 
 <script>
 import Dogs from './components/Dogs'; 
-import dogs from './dogs'; 
+import dogs from './dogs';
 
 export default {
     data() {
@@ -18,6 +21,11 @@ export default {
     }, 
     components: {
         Dogs
+    }, 
+    methods: {
+        handleSelect(dog) {
+            this.selected = dog; 
+        }
     }
 }; 
 </script>
