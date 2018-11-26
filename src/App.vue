@@ -3,6 +3,8 @@
       <h1>Superhero List</h1>
       <Superheroes
         v-bind:superheroes="superheroes"
+        v-bind:selected="selected"
+        v-bind:onSelect="handleSelect"
       />
       <SuperheroDetail
         v-bind:superhero="selected"/>

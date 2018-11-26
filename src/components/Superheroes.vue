@@ -3,6 +3,7 @@
         <li v-for="superhero in superheroes"
             v-bind:key="superhero.name"
             v-bind:class="{ superhero: true, selected: superhero === selected }"
+            v-on:click="onSelect(superhero)"
         >
             <img v-bind:src="superhero.image">
             <h3>{{superhero.name}}</h3>
@@ -13,7 +14,9 @@
 <script>
 export default {
     props: {
-        superheroes: Array
+        superheroes: Array,
+        selected: Object,
+        onSelect: Function
     }
 };
 </script>
