@@ -2,10 +2,10 @@
     <ul class="dogs"> 
       <li v-for="dog in dogs"
           v-bind:class="{ dogs: true, selected: dog === selected }"
-          v-bind:key="dog.name">
+          v-bind:key="dog.name"
           v-on:click="onSelect(dog)">
         <img v-bind:src="dog.image"> 
-        <h3>{{dog.name}} who is {{dogs.description}}</h3>
+        <h3>{{dog.name}}</h3>
       </li>
     </ul>
 </template>
@@ -35,8 +35,14 @@ export default {
     margin-right: 3px;
     cursor: pointer;
 }
-.pirate h3 {
+.dogs h3 {
     text-shadow: 1px 1px 1px black;
+    text-align: center;
+    width: 100%;
+}
+.dogs.selected {
+    background:grey;
+    border-radius: 15%; 
 }
 .dogs img {
     height: 70%;

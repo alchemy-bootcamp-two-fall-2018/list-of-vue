@@ -4,6 +4,8 @@
             v-bind:dogs="dogs"
             v-bind:selected="selected"
             v-bind:onSelect="handleSelect"/>
+        <Player
+            v-bind:dog="selected"/>
 
     </div>
 </template>
@@ -11,6 +13,7 @@
 <script>
 import Dogs from './components/Dogs'; 
 import dogs from './dogs';
+import Player from './components/Player';
 
 export default {
     data() {
@@ -20,7 +23,8 @@ export default {
         }; 
     }, 
     components: {
-        Dogs
+        Dogs, 
+        Player
     }, 
     methods: {
         handleSelect(dog) {
