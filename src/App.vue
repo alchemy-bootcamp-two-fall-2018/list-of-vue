@@ -1,5 +1,6 @@
 <template>
     <div id="app">
+      <h1>Superhero List</h1>
       <Superheroes
         v-bind:superheroes="superheroes"
       />
