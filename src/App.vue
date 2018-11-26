@@ -1,12 +1,23 @@
 <template>
-  <div id="app">
-    
-  </div>
+    <div id="app">
+      <Superheroes
+        v-bind:superheroes="superheroes"
+      />
+    </div>
 </template>
 
 <script>
-
+import Superheroes from './components/Superheroes';
+import superheroes from './superhero-data';
 export default {
+    data() {
+        return {
+            superheroes
+        };
+    },
+    components: {
+        Superheroes
+    }
   
 };
 </script>
