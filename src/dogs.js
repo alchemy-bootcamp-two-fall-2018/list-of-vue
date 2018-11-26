@@ -1,7 +1,7 @@
-const dogs  = [
+const dogs = [
     { 
         name: 'French Bulldog',
-        image: 'https://s3.amazonaws.com/cdn-origin-etr.akc.org/wp-content/uploads/2017/11/12194915/French-Bulldog-on-White-14.jpg', 
+        image: 'https://s3.amazonaws.com/cdn-origin-etr.akc.org/wp-content/uploads/2017/11/12145606/20121215-_MG_3384.jpg', 
         description: 'A pupper with bat ears and snores'
     },
     {
@@ -11,7 +11,7 @@ const dogs  = [
     }, 
     {
         name: 'Australian Shepard', 
-        image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTLhPha-IPf_R9CVx4ybXtemHcuqTuNPRpcn3ZlFSzGwMfi-TaJ', 
+        image: 'https://www.petguide.com/wp-content/uploads/2013/02/australian-shepherd1.jpg', 
         description: 'A floofer that has butt wiggles when happy'
     }, 
     {
