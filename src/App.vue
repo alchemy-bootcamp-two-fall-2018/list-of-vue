@@ -1,15 +1,32 @@
 <template>
   <div id="app">
-
+    <img v-bind:src="emojis[0].image">
+    <Emojis v-bind:emojis="emojis"
+            v-bind:onSelect="handleSelect"/>
+    <Details />
   </div>
 </template>
 
 <script>
 
+import emojis from './emoji-data.js';
+import Emojis from './components/Emoji.vue';
+import Details from './components/Player.vue';
 
 export default {
-  name: 'app',
+  data() {
+    return {
+      emojis,
+    };
+  },
   components: {
+    Emojis,
+    Details
+  },
+  methods: {
+    handleSelect(emoji) {
+      console.log(emoji);
+    }
   }
 };
 </script>
