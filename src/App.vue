@@ -1,7 +1,9 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Your Vue.js App"/>
+    <Dogs
+      v-bind:dogs="dogs"
+      v-bind:selected="selected"
+      v-bind:onSelect="handleSelect"/>
   </div>
 </template>
 
