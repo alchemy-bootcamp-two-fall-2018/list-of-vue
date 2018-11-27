@@ -21,9 +21,15 @@ export default {
 </script>
 
 <style>
+    .img{
+        height: 200px;
+        width: auto;
+    }
     .bassists {
         display: flex;
         flex-wrap: wrap;
+        height: 200px;
+        width: auto;
     }
 
     .bassist {

@@ -13,7 +13,7 @@
 
 <script>
 import Bassists from './components/Bassists.vue';
-import Bassist_Details from './components/Bassist_Detail.vue';
+import Bassist_Detail from './components/Bassist_Detail.vue';
 import bassists from './bassist-data.js';
 
 export default {
@@ -26,7 +26,7 @@ export default {
 
     components: {
         Bassists,
-        Bassist_Details
+        Bassist_Detail
     },
 
     methods: {
