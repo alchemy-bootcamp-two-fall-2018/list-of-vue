@@ -1,5 +1,6 @@
 <template>
   <div id="app">
+    <Add v-bind:Add="handleAdd"/>
     <Emojis v-bind:emojis="emojis"
             v-bind:onSelect="handleSelect"/>
     <Details v-bind:emoji="selectedEmo"/>
@@ -11,6 +12,7 @@
 import emojis from './emoji-data.js';
 import Emojis from './components/Emoji.vue';
 import Details from './components/Player.vue';
+import Add from './components/Add.vue';
 
 export default {
   data() {
@@ -21,11 +23,15 @@ export default {
   },
   components: {
     Emojis,
-    Details
+    Details,
+    Add
   },
   methods: {
     handleSelect(emoji) {
       this.selectedEmo = emoji;
+    },
+    handleAdd(newEmoji) {
+      console.log(newEmoji.name, newEmoji.category);
     }
   }
 };
@@ -48,5 +54,4 @@ img{
 ul {
   list-style-type: none;
 }
-
 </style>
