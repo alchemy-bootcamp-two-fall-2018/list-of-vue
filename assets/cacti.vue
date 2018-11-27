@@ -5,7 +5,7 @@
             v-bind:key="cactus.name"
             v-on:click="onSelect(cactus)">
             <img v-bind:src="cactus.image">
-            <h3>{{cactus.name}} the {{pirate.role}}</h3>
+            <h3>{{cactus.name}}</h3>
             <h3>Huggability factor: {{cactus.huggability}}</h3>
         </li>
     </ul>

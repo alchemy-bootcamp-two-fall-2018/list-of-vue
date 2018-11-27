@@ -1,4 +1,4 @@
-const data = [
+const cacti = [
     {
         name: 'Prickly Pear',
         huggability: '0/10',
@@ -15,4 +15,4 @@ const data = [
         image: './blue.jpg'
     }
 ]
-export default data;
+export default cacti;
