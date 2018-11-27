@@ -3,7 +3,7 @@
         <li v-for="emoji in emojis"
             v-bind:key="emoji.name"
             v-on:click="onSelect(emoji)"
-            v-bind:class="{selected: false}">
+            v-bind:class="{selected: isSelected === emoji}">
         <img v-bind:src="emoji.image">
         </li>
     </ul>
@@ -15,7 +15,7 @@ export default {
   props: {
     emojis: Array,
     onSelect: Function,
-    selected: Boolean
+    isSelected: Object
   }
 };
 

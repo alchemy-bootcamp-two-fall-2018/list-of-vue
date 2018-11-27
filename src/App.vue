@@ -2,7 +2,8 @@
   <div id="app">
     <Add v-bind:Add="handleAdd"/>
     <Emojis v-bind:emojis="emojis"
-            v-bind:onSelect="handleSelect"/>
+            v-bind:onSelect="handleSelect"
+            v-bind:isSelected="isSelected"/>
     <Details v-bind:emoji="selectedEmo"/>
   </div>
 </template>
@@ -18,7 +19,8 @@ export default {
   data() {
     return {
       emojis,
-      selectedEmo: null
+      selectedEmo: null,
+      isSelected: null
     };
   },
   components: {
@@ -29,6 +31,7 @@ export default {
   methods: {
     handleSelect(emoji) {
       this.selectedEmo = emoji;
+      this.isSelected = emoji;
     },
     handleAdd(newEmoji) {
       this.emojis.push(newEmoji);
@@ -53,5 +56,8 @@ img{
 }
 ul {
   list-style-type: none;
+}
+.selected {
+  border: 3px solid red;
 }
 </style>
