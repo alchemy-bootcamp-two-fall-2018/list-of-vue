@@ -1,5 +1,5 @@
 <template>
-    <ul class= donuts>
+    <ul class=donuts>
         <li v-bind:class="{ donut: true, selected: donut === selected }"    
             v-for="donut in donuts"
             v-bind:key="donut.name"
@@ -33,7 +33,8 @@ export default {
     cursor: pointer;
 }
 img {
-    object-fit: cover
+    object-fit: cover;
+    width: 100px;
     
 }
 

@@ -10,9 +10,9 @@
 </template>
 
 <script>
-import Donuts from './components/donuts';
+import Donuts from './components/Donuts';
 import DonutDetail from './components/DonutDetail';
-import donuts from './donut-data';
+import donuts from './components/donut-data';
 
 
 export default {
