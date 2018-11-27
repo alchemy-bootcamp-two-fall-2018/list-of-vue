@@ -1,3 +1,4 @@
+//import pokemon from ".assets/logo.png";
 const pokemons = [
     {
         name: 'Dragonite',

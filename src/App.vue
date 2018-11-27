@@ -1,13 +1,14 @@
 <template>
   <div id="app">
-    <Pokemon v-bind:pokemon="pokemon"
+    <Pokemon 
+    v-bind:pokemon="pokemon"
     v-bind:onSelect="handleSelect"/>
   </div>
 </template>
 
 <script>
 import Pokemon from './components/Pokemon';
-import pokemons from './pokemon-data';
+import pokemons from './components/pokemon-data';
 
 export default {
     data(){
