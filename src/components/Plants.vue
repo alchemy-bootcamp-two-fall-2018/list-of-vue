@@ -4,7 +4,7 @@
       v-bind:class="{ plant: true, selected: plant === selected }"
         v-bind:key="plant.name"
         v-on:click="onSelect(plant)">
-      <h3>{{plant.name}} rates {{plant.filterNum}} for filter</h3>
+      <h3>{{plant.name}}</h3>
       <img v-bind:src="plant.image">
     </li>
   </ul>
@@ -27,11 +27,13 @@ plants {
   border: 1px solid #aaaa;
   text-align: center;
 }
-plant {
+ul   {
   list-style: none;
 }
 img {
   width: 200px;
 }
-
+.plant.selected {
+  background:lavenderblush;
+}
 </style>

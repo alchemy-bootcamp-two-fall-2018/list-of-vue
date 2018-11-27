@@ -1,5 +1,6 @@
 <template>
   <div id="app">
+      <h2>Pick a plant that is a great filter for your house!</h2>
     <Plants v-bind:plants="plants"
     v-bind:selected="selected"
     v-bind:onSelect="handleSelect"/>
@@ -37,7 +38,11 @@ export default {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #2c3e50;
+  color:burlywood;
   margin-top: 60px;
+}
+h2 {
+  text-align: center;
+  color:cadetblue;
 }
 </style>
