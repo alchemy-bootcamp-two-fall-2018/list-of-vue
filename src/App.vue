@@ -1,6 +1,5 @@
 <template>
   <div id="app">
-    <img v-bind:src="emojis[0].image">
     <Emojis v-bind:emojis="emojis"
             v-bind:onSelect="handleSelect"/>
     <Details v-bind:emoji="selectedEmo"/>
@@ -41,4 +40,13 @@ export default {
   color: #2c3e50;
   margin-top: 60px;
 }
+img{
+  width: 100px;
+  margin: 5%;
+  display: inline-block;
+}
+ul {
+  list-style-type: none;
+}
+
 </style>
