@@ -2,13 +2,17 @@
   <div id="app">
     <Books 
         v-bind:books="books"
-    />
+        v-bind:selected="selected"
+        v-bind:onSelect="handleSelect"/>
+    <Bookdetail 
+        v-bind:book="selected"/>   
   </div>
 </template>
 
 <script>
 
 import Books from './components/Books.vue';
+import Bookdetail from './components/Bookdetail.vue';
 import books from './book-data';
 
 export default {
@@ -18,14 +22,16 @@ export default {
             selected: null
         };
     },
-    
-    
+        
     components: {
-        Books
+        Books,
+        Bookdetail
     }, 
 
     methods: {
-
+        handleSelect(book) {
+            this.selected = book;
+        }
     }
 };
 </script>
