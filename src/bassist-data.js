@@ -1,19 +1,19 @@
 const bassists = [
     {
         name: 'Flea',
-        image: './src/assets/flea.jpg',
+        image: './assets/flea.jpg',
         gear: 'Modulus Funk Unlimited'
     },
 
     {
         name: 'Thundercat',
-        image: './src/assets/thundercat.jpg',
+        image: './assets/thundercat.jpg',
         gear: 'Ibanez TCB1006 '
     },
 
     {
         name: 'Esperanza Spalding',
-        image: './src/assets/Esperanza.jpg',
+        image: './assets/Esperanza.jpg',
         gear: 'Fender Jaco Pastorius Jazz Bass'
     }
 

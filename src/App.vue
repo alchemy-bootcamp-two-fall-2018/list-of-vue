@@ -1,19 +1,41 @@
 <template>
   <div id="app">
     <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <Bassists 
+        v-bind:bassists="bassists"
+        v-bind:selected="selected"
+        v-bind:onSelect="handleSelect"/>
+    <Bassist_Detail
+        v-bind:bassist="selected"/>
   </div>
 </template>
 
+
 <script>
-import HelloWorld from './components/HelloWorld.vue';
+import Bassists from './components/Bassists.vue';
+import Bassist_Details from './components/Bassist_Detail.vue';
+import bassists from './bassist-data.js';
 
 export default {
-    name: 'app',
+    data() {
+        return {
+            bassists,
+            selected: null
+        };
+    },
+
     components: {
-        HelloWorld
+        Bassists,
+        Bassist_Details
+    },
+
+    methods: {
+        handleSelect(bassist) {
+            this.selected = bassist;
+        }
     }
 };
+
 </script>
 
 <style>
