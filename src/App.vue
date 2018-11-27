@@ -4,11 +4,14 @@
       v-bind:leafygreens="leafygreens"
       v-bind:onSelect="handleSelect"
     />
+    <LeafygreenDetail
+      v-bind:leafygreen="selected"/>
   </div>
 </template>
 
 <script>
 import Leafygreens from './components/Leafygreens.vue';
+import LeafygreenDetail from './components/LeafygreenDetail.vue';
 import leafygreens from './leafy-greens.js';
 
 export default {
@@ -19,7 +22,8 @@ export default {
         };
     },
     components: {
-        Leafygreens
+        Leafygreens,
+        LeafygreenDetail
     },
     methods: {
         handleSelect(leafygreen) {
