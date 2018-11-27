@@ -6,7 +6,7 @@
             <p>{{plant.funFact}}</p>
             <img v-bind:src="plant.image">
         </div>
-        <div v-else>Please choose a plant</div>
+        <div class="choose" v-else>Please choose a plant</div>
     </section>
 </template>
 
@@ -19,5 +19,9 @@ export default {
 </script>
 
 <style>
-
+.choose {
+    font-weight: 300px;
+    text-align: center;
+    color:red;
+}
 </style>

@@ -22,8 +22,8 @@ export default {
 
 <style>
 plants {
-  display: flex;
-  flex-wrap: wrap;
+  display:flex;
+  flex-wrap:wrap;
   border: 1px solid #aaaa;
   text-align: center;
 }
@@ -31,9 +31,11 @@ ul   {
   list-style: none;
 }
 img {
-  width: 200px;
+  width: 150px;
+  height: 150px;
 }
 .plant.selected {
   background:lavenderblush;
+  
 }
 </style>

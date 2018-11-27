@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-      <h2>Pick a plant that is a great filter for your house!</h2>
+      <h2>Filter the air in your house with these plants! Pick from the list below.</h2>
     <Plants v-bind:plants="plants"
     v-bind:selected="selected"
     v-bind:onSelect="handleSelect"/>
