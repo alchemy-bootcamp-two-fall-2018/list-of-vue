@@ -1,6 +1,7 @@
 <template>
     <ul class="leafygreens">
         <li v-for="leafygreen in leafygreens"
+            v-bind:class="{ leafygreen: true, selected: leafygreen === selected }"
             v-bind:key="leafygreen.name"
             v-on:click="onSelect(leafygreen)"
         >
@@ -13,6 +14,7 @@
 export default {
     props: {
         leafygreens: Array,
+        selected: Object,
         onSelect: Function
     }
 };
@@ -25,12 +27,15 @@ export default {
 .leafygreen {
     list-style: none;
     position: relative;
-    width: 50px;
-    height: 50px;
+    width: 400px;
+    height:400px;
     border: 1px solid black;
     text-align: center;
     margin: 5px 5px;
     cursor: pointer;
+}
+.leafygreen.selected {
+  background: yellowgreen;
 }
  .leafygreen img {
     height: 50%;

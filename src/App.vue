@@ -2,6 +2,7 @@
   <div id="app">
     <Leafygreens
       v-bind:leafygreens="leafygreens"
+      v-bind:selected="selected"
       v-bind:onSelect="handleSelect"
     />
     <LeafygreenDetail
@@ -27,7 +28,7 @@ export default {
     },
     methods: {
         handleSelect(leafygreen) {
-            console.log('user selected leafygreen', leafygreen.name);
+            this.selected = leafygreen;
         }
     }        
 };
