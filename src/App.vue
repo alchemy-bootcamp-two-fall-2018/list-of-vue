@@ -2,6 +2,7 @@
   <div id="app">
     <Leafygreens
       v-bind:leafygreens="leafygreens"
+      v-bind:onSelect="handleSelect"
     />
   </div>
 </template>
@@ -19,7 +20,12 @@ export default {
     },
     components: {
         Leafygreens
-    }
+    },
+    methods: {
+        handleSelect(leafygreen) {
+            console.log('user selected leafygreen', leafygreen.name);
+        }
+    }        
 };
 </script>
 

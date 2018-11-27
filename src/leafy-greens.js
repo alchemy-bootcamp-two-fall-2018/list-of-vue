@@ -7,7 +7,7 @@ const leafygreens = [
     },
     {
         name: 'Spinach',
-        image: 'https://cdn1.medicalnewstoday.com/content/images/hero/270/270609/270609_1100.jpg',
+        image: 'https://www.seedsavers.org/site/img/seo-images/1495-nobel-spinach.jpg',
         calories: '7',
         benefits: 'Promotes skin, hair, and bone health.  Provides protein, iron, vitamins, and minerals.'
     },
