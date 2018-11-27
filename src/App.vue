@@ -31,7 +31,7 @@ export default {
       this.selectedEmo = emoji;
     },
     handleAdd(newEmoji) {
-      console.log(newEmoji.name, newEmoji.category);
+      this.emojis.push(newEmoji);
     }
   }
 };
