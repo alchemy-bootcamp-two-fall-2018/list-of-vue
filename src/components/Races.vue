@@ -1,9 +1,11 @@
 <template>
     <ul>
         <pre>{{races}}</pre>
-        <li>
-            <h3>Race</h3>
-            <img src="../assets/mountainLakes.jpeg"/>
+        <li v-for="race in races"
+            v-bind:key="race.name">
+        
+            <h3>{{race.name}}</h3>
+            <img v-bind:src="race.image"/>
         </li>
     </ul>
 </template>
