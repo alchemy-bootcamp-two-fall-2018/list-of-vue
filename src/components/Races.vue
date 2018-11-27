@@ -1,11 +1,15 @@
 <template>
     <ul>
-        <pre>{{races}}</pre>
+        <!-- <pre>{{races}}</pre> -->
         <li v-for="race in races"
             v-bind:key="race.name">
         
-            <h3>{{race.name}}</h3>
             <img v-bind:src="race.image"/>
+            <h3>{{race.name}}</h3>
+
+            <h3 v-for="distance in race.distance"
+                v-bind:key="distance" 
+                >{{distance}}</h3>
         </li>
     </ul>
 </template>
