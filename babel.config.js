@@ -1,5 +1,3 @@
-module.exports = {
-  presets: [
+export const presets = [
     '@vue/app'
-  ]
-}
+]; 

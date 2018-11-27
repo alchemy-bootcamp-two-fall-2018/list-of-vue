@@ -3,7 +3,7 @@
         <div v-if="dog">
             <h2>{{dog.name}}</h2>
             <p>{{dog.description}}</p>
-            <img v-bind:src="dog.image">
+            <img id="dog-description" v-bind:src="dog.image">
         </div>
     </section>
 </template>
@@ -15,3 +15,18 @@ export default {
     }
 };
 </script>
+<style>
+h2 {
+    text-align: center;
+}
+p {
+   text-align: center;
+}
+#dog-description {
+    margin: auto;
+    width: 50%;
+    border: 3px solid grey ;
+    padding: 10px;
+    display: block; 
+}
+</style>
