@@ -26,7 +26,14 @@ const superheroes = [
         image: 'https://ips.pepitastore.com/storefront/img/resized/squareenix-store-v2/dffb07f41aa7989dfd25a493d5956302_1920_KR.jpg',
         powers: 'super speed, intangibility, superhuman agility',
         realname: 'Barry Allen'
-    }
+    },
+    {
+        name: 'Black Widow',
+        location: 'New York(?)',
+        image: 'https://i.pinimg.com/originals/1d/74/ed/1d74ed294358937c85b9ea8e6febbdff.jpg',
+        powers: 'weapon master, stealth expert, extremely skilled in combat',
+        realname: 'Natasha Romanova'
+    } 
 
 
 
