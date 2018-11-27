@@ -1,14 +1,22 @@
 <template>
-  <div class="detail">
-    <h1>{{ msg }}</h1>
-  </div>
+<ul class="animals">
+    <li v-for="animal in animals"
+    v-bind:class="{ animal: true, selected: animal === selected }"
+    v-bind:key="animal.name"
+    v-on:click="onSelect(animal)">
+    <img v-bind:src="animal.image">
+    <h3>{{ animal.name}} is a {{ animal.species}}</h3>
+    </li>
+</ul>
 </template>
 
 <script>
 export default {
     name: 'Animals',
     props: {
-        msg: String
+        animals: Array,
+        selected: Object,
+        onSelect: Function
     }
 };
 </script>
@@ -28,5 +36,8 @@ li {
 }
 a {
   color: #42b983;
+}
+.animals img {
+    width: 100px;
 }
 </style>
