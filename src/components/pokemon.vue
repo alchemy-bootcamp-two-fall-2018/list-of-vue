@@ -4,9 +4,13 @@
         <li v-for="pokemon in pokemons"
             v-bind:class="{ pokemon: true, selected: pokemon === selected }"
             v-bind:key="pokemon.name"
+           
             v-on:click="onSelect(pokemon)">
-            <h3>{{pokemon.name}}</h3>
             <img v-bind:src= "pokemon.image"> 
+            <h3>{{pokemon.name}}</h3>
+            <h3>{{pokemon.height}}</h3>
+            <h3>{{pokemon.weight}}</h3>
+            
         </li>
     </ul>        
 </template>
@@ -24,9 +28,7 @@ export default {
 
 <style>
 li{
-display:flex;
-flexwrap:wrap;
-width:100%;
+list-style:none;    
 cursor:pointer;
 }
 

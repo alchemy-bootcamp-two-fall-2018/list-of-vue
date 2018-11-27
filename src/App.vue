@@ -38,8 +38,11 @@ export default {
   color: #2c3e50;
   margin-top: 60px;
 }
-
+ul{
+    display:flex;
+}
 h3{
+    
 
 }
 
