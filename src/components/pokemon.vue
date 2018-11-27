@@ -2,11 +2,10 @@
     <ul>
         <pre>{{Pokemon}}</pre>
         <li v-for="pokemon in pokemons"
-        v-bind:key="pokemon.name">
+            v-bind:key="pokemon.name"
+            v-on:click="onSelect(pokemon)">
             <h3>{{pokemon.name}}</h3>
-            <img v-bind:src= "pokemon.image">
-            
-            
+            <img v-bind:src= "pokemon.image"> 
         </li>
     </ul>        
 </template>
@@ -16,8 +15,14 @@
 
 export default {
     props: {
-        pokemon:Array
-    }
+        pokemon:Array,
+        onSelect: Function
+    },
+    methods: {
+        handleSelect(pokemon) {
+            this.onSelect('selected', pokemon);
+        }
+    }    
 };
 </script>
 

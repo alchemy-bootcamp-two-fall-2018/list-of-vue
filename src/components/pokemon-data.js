@@ -16,4 +16,6 @@ const pokemons = [
         weight:'2kg'
     }
 ];
+
+export default pokemons;
      
