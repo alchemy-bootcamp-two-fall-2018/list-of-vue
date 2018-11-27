@@ -1,7 +1,7 @@
 <template>
     <ul class= donuts>
         <li v-bind:class="{ donut: true, selected: donut === selected }"    
-            v-for="donut in donuts"
+            v-for-key="donut in donuts"
             v-bind:key"donut.name"
             v-on:click="onSelect(donut)">
             <h3>{{donut.name}} the {{donut.attribute}}</h3>
@@ -21,10 +21,6 @@ export default {
 </script>  
 
 <style>
-li {
-    position: relative;
-    display: inline-block; 
-}
 
 .donuts {
     display: flex;

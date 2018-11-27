@@ -4,14 +4,14 @@
         v-bind:donuts="donuts"
         v-bind:selected="selected"
         v-bind:onSelect="handleSelect"/>
-    <Player
+    <DonutDetail
         v-bind:donut="selected"/> 
   </div>
 </template>
 
 <script>
-import Donuts from './components/Donuts';
-import Player from './components/Player';
+import Donuts from './components/donuts';
+import DonutDetail from './components/DonutDetail';
 import donuts from './donut-data';
 
 
@@ -25,7 +25,7 @@ export default {
   components: { 
     // Donuts: Donuts
     Donuts,
-    Player
+    DonutDetail
   },
   methods: {
     handleSelect(donut) {
@@ -45,5 +45,9 @@ export default {
   text-align: center;
   color: #2c3e50;
   margin-top: 60px;
+}
+body {
+  padding: 0px;
+  margin: 0px;
 }
 </style>

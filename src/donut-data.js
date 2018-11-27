@@ -1,7 +1,7 @@
 const donuts = [
     {
         name: 'Cake Donut',
-        image: '',
+        image: 'olddo/jpg',
         attribute: 'Classic-n-Classy'
     },
     {

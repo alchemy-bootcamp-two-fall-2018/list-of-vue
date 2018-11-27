@@ -18,4 +18,13 @@ export default {
 </script>
 
 <style>
+.donut-detail img {
+    height: 60%;
+    width: auto;
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
 </style>
