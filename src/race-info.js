@@ -23,4 +23,6 @@ const races = [
         distance: ['100k'],
         qualifier: 'yes'
     }
-]
+];
+
+export default races;
