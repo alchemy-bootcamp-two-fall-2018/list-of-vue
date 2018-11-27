@@ -16,23 +16,23 @@ import donuts from './donut-data';
 
 
 export default {
-  data () {
-    return {
-      donuts,
-      selected: null
-    };
-  }, 
-  components: { 
+    data() {
+        return {
+            donuts,
+            selected: null
+        };
+    }, 
+    components: { 
     // Donuts: Donuts
-    Donuts,
-    DonutDetail
-  },
-  methods: {
-    handleSelect(donut) {
-      this.selected = donut;
-      // console.log ('user selected', donut.name ); 
+        Donuts,
+        DonutDetail
+    },
+    methods: {
+        handleSelect(donut) {
+            this.selected = donut;
+            console.log ('user selected', donut.name); 
+        }
     }
-  }
 };
 
 </script>

@@ -1,12 +1,12 @@
 <template>
     <ul class= donuts>
-        <!-- <li v-bind:class="{ donut: true, selected: donut === selected }"    
+        <li v-bind:class="{ donut: true, selected: donut === selected }"    
             v-for="donut in donuts"
-            v-bind:"donut.name"
+            v-bind:key="donut.name"
             v-on:click="onSelect(donut)">
             <h3>{{donut.name}} the {{donut.attribute}}</h3>
             <img v-bind:src="donut.image">
-        </li> -->
+        </li>
     </ul>
 </template>
                                  
@@ -20,7 +20,7 @@ export default {
 };
 </script>  
 
-<style>
+<style scoped>
 
 .donuts {
     display: flex;
@@ -32,4 +32,10 @@ export default {
     text-align: center;
     cursor: pointer;
 }
+img {
+    object-fit: cover
+    
+}
+
+
 </style>

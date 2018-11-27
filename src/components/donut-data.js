@@ -1,37 +1,37 @@
 const donuts = [
     {
         name: 'Cake Donut',
-        image: 'cake.jpg',
+        image: 'img/cake.jpg',
         attribute: 'Classic-n-Classy'
     },
     {
         name: 'Jelly Donut',
-        image: 'jelly.jpg',
+        image: 'img/jelly.jpg',
         attribute: 'Soft on the Inside'
     },
     {
         name: 'Frosted',
-        image: 'frost.jpg',
+        image: 'img/frost.jpg',
         attribute: 'Extra Sweet'
     },
     {
         name: 'Boston Creme',
-        image: 'creme.jpg',
+        image: 'img/creme.jpg',
         attribute: 'A Hidden Treasure'
     },
     {
         name: 'French Cruller',
-        image: 'french.jpg',
+        image: 'img/french.jpg',
         attribute: 'Exotic'
     },
     {
         name: 'Old-Fashioned',
-        image: 'old.jpg',
+        image: 'img/old.jpg',
         attribute: 'Oldie but Goodie',
     },
     {
         name: 'Donut Holes',
-        image: 'holes.jpg',
+        image: 'img/holes.jpg',
         attribute: 'Fun with Friends'
     }
 ];
