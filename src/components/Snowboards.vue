@@ -5,7 +5,7 @@
             v-bind:key="snowboard.name"
             v-on:click="onSelect(snowboard)">
             <img v-bind:src="snowboard.image">
-            <h3>{{snowboard.name}} the {{snowboard.role}}</h3>
+            <h3>{{snowboard.name}}</h3>
         </li>
     </ul>
 </template>
