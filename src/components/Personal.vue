@@ -2,7 +2,7 @@
     <section>
         <div v-if="guitarist">
             <h2>You Chose {{guitarist.name}}</h2>
-            <p>{{guitarist.handed}} handed guitarist from {{guitarist.from}}</p>
+            <p>A {{guitarist.handed}} handed guitarist from {{guitarist.from}}</p>
         </div>
     </section>
 </template>

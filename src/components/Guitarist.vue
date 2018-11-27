@@ -5,7 +5,7 @@
           v-bind:class="{ guitarist: true, selected: guitarist === selected }"
           v-on:click="onSelect(guitarist)">
           <img v-bind:src="guitarist.img">
-          <h3>{{guitarist.name}} from {{guitarist.from}}</h3>
+          <h2>{{guitarist.name}}</h2>
       </li>
   </ul>
 </template>
@@ -17,7 +17,6 @@ export default {
         selected: Object,
         onSelect: Function
     }
-    
 };
 </script>
 

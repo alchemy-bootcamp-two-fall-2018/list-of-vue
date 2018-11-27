@@ -1,10 +1,10 @@
 <template>
   <div id="app">
-    <h1>Pick your favorite Guitarist</h1>
     <div class="wrapper">
+      <h1>Pick your favorite Guitarist</h1>
       <Guitarist v-bind:guitarists="guitarists"
-                v-bind:selected="selected"
-                v-bind:onSelect="handleSelect"/>
+                 v-bind:selected="selected"
+                 v-bind:onSelect="handleSelect"/>
       <Personal
           v-bind:guitarist="selected"/>
     </div>
@@ -19,7 +19,7 @@ import guitarists from './Guitarists.js';
 export default {
     components: {
         Guitarist,
-        Personal
+        Personal,
     },
     data() {
         return {
@@ -32,7 +32,6 @@ export default {
             this.selected = guitarist;
         }
     }
-
 };
 </script>
 
@@ -43,6 +42,11 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
+}
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;
 }
 </style>
