@@ -33,6 +33,7 @@ const donuts = [
         name: 'Donut Holes',
         image: '',
         attribute: 'The More the Merrier'
-    },
+    }
+];
 
-]
+export default donuts;

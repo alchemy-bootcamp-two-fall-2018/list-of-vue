@@ -1,12 +1,17 @@
 <template>
   <div id="app">
-    <donuts v-bind:donuts="donuts"
-            v-bind:onSelect="handSelect "/> 
+    <donuts 
+        v-bind:donuts="donuts"
+        v-bind:selected="selected"
+        v-bind:onSelect="handleSelect"/>
+    <Player
+        v-bind:donut="selected"/> 
   </div>
 </template>
 
 <script>
 import Donuts from './components/Donuts';
+import Player from './components/Player';
 import donuts from './donut-data';
 
 
@@ -16,16 +21,17 @@ export default {
       donuts,
       selected: null
     };
-  },
-  components: {
+  }, 
+  components: { 
     // Donuts: Donuts
-    Donuts
+    Donuts,
+    Player
   },
   methods: {
     handleSelect(donut) {
-      // console.log ('user selected donut)
+      this.selected = donut;
+      // console.log ('user selected', donut.name ); 
     }
-
   }
 };
 
