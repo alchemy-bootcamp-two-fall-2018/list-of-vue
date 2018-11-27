@@ -43,6 +43,24 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
+  margin-bottom: 60px;
 }
+
+body {
+  padding: 0px;
+  margin: 0px;
+}
+
+h1 {
+  font-size: 5em;
+  border-bottom: 3px solid black;
+  padding-bottom: 30px;
+  padding-top: 30px;
+  margin-top: 0px;
+  color: white;
+  background-color: black;
+  font-family: bangers;
+  letter-spacing: 1.5px;
+}
+
 </style>

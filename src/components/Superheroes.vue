@@ -25,14 +25,15 @@ export default {
 
 .superheroes {
     display: flex;
+    justify-content: center;
     flex-wrap: wrap;
 }
 
 .superhero {
     list-style: none;
     position: relative;
-    width: 200px;
-    height: 200px;
+    width: 250px;
+    height: 250px;
     border: 1px solid black;
     text-align: center;
     margin: 5px 5px;
@@ -47,6 +48,11 @@ export default {
     left: 0;
     right: 0;
     margin: auto;
+}
+
+.superhero.selected {
+    background-color: lightgray;
+    border: 3px solid red;
 }
 
 .superhero h3 {
