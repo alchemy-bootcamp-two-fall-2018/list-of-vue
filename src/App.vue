@@ -3,7 +3,7 @@
     <img v-bind:src="emojis[0].image">
     <Emojis v-bind:emojis="emojis"
             v-bind:onSelect="handleSelect"/>
-    <Details />
+    <Details v-bind:emoji="selectedEmo"/>
   </div>
 </template>
 
@@ -17,6 +17,7 @@ export default {
   data() {
     return {
       emojis,
+      selectedEmo: null
     };
   },
   components: {
@@ -25,7 +26,7 @@ export default {
   },
   methods: {
     handleSelect(emoji) {
-      console.log(emoji);
+      this.selectedEmo = emoji;
     }
   }
 };

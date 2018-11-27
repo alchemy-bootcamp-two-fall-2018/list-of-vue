@@ -2,7 +2,7 @@
     <div v-if="emoji">
         <h2>{{emoji.name}}</h2>
         <p>Role: {{emoji.role}}</p>
-        <p>Categor: {{emoji.category}}</p>
+        <p>Category: {{emoji.category}}</p>
         <img v-bind:src="emoji.image">
     </div>
     <div v-else>Please choose an emoji</div>
