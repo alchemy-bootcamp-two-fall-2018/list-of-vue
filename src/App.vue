@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
+    <h1> A few badass bass players </h1>
     <Bassists 
         v-bind:bassists="bassists"
         v-bind:selected="selected"
