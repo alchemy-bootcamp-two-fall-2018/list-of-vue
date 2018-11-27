@@ -1,5 +1,6 @@
 <template>
     <div id="app"> 
+        <h1>Please Select a Doggo!</h1>
         <Dogs 
             v-bind:dogs="dogs"
             v-bind:selected="selected"
@@ -33,3 +34,8 @@ export default {
     }
 }; 
 </script>
+<style>
+h1 {
+    text-align: center;
+}
+</style>

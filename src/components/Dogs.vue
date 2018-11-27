@@ -36,7 +36,7 @@ export default {
     cursor: pointer;
 }
 .dogs h3 {
-    text-shadow: 1px 1px 1px black;
+    text-shadow: 1px 3px 5px lightyellow;
     text-align: center;
     width: 100%;
 }
