@@ -1,4 +1,4 @@
-const greens = [
+const leafygreens = [
     {
         name: 'Collard Greens',
         image: 'https://www.highmowingseeds.com/media/catalog/product/cache/image/675x675/e9c3970ab036de70892d86c6d221abfe/2/3/2343.jpg',
@@ -19,4 +19,4 @@ const greens = [
     }
 ];
 
-export default greens;
+export default leafygreens;

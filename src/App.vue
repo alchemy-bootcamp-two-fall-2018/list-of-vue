@@ -1,17 +1,24 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <Leafygreens
+      v-bind:leafygreens="leafygreens"
+    />
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue';
+import Leafygreens from './components/Leafygreens.vue';
+import leafygreens from './leafy-greens.js';
 
 export default {
-    name: 'app',
+    data() {
+        return {
+            leafygreens,
+            selected:null
+        };
+    },
     components: {
-        HelloWorld
+        Leafygreens
     }
 };
 </script>
