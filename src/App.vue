@@ -1,17 +1,22 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld message="Only You Can prevent"/>
+    <Pokemon v-bind:pokemon="pokemon"/>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue';
+import Pokemon from './components/Pokemon.vue';
+import pokemon from './pokemon-data';
 
 export default {
-    name: 'app',
+    data(){
+        return {
+            pokemon
+            selected: null
+        };
+    },
     components: {
-        HelloWorld
+        Pokemon
     }
 };
 </script>
@@ -24,5 +29,16 @@ export default {
   text-align: center;
   color: #2c3e50;
   margin-top: 60px;
+}
+
+h3{
+
+}
+
+li{
+
+}
+img{
+
 }
 </style>
