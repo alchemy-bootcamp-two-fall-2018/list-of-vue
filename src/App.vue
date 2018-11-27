@@ -1,5 +1,6 @@
 <template>
   <div id="app">
+    <h1>What up Dog?</h1>
     <Dogs
       v-bind:dogs="dogs"
       v-bind:selected="selected"
@@ -41,5 +42,8 @@ export default {
   text-align: center;
   color: #2c3e50;
   margin-top: 60px; */
+}
+h1 {
+    text-align: center;
 }
 </style>

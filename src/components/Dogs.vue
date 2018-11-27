@@ -24,6 +24,7 @@ export default {
 .dogs {
     display: flex;
     flex-direction: row;
+    justify-content: center;
 
 }
 .dog img {

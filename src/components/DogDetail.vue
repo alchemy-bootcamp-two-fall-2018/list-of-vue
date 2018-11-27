@@ -6,7 +6,7 @@
             <p><span>Color: </span> {{dog.color}}</p>
             <img v-bind:src="dog.image">
         </div>
-        <div v-else>Select a dog to view detail</div>
+        <div id="select" v-else>Select a dog to view detail</div>
     </section>
 </template>
 
@@ -19,8 +19,16 @@ export default {
 </script>
 
 <style>
-img {
-    height: 300px;
-    align-items: center;
+h2 {
+    text-align: center;
 }
+#select {
+    text-align: center;
+}
+img {
+    display: flex;
+    align-items: center;
+    height: 300px;
+}
+
 </style>
