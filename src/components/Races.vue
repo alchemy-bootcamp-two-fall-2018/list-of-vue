@@ -2,7 +2,7 @@
     <ul>
         <li>
             <h3>Race</h3>
-            <img src="../assets/sob50.png"/>
+            <img src="../assets/mountainLakes.jpeg"/>
         </li>
     </ul>
 </template>
@@ -16,8 +16,18 @@ export default {
 
 <style>
     li {
-        display:flex;
+        display:inline-block;
         height: 100px;
-        width: auto;
+        width: 100px;
+        border: 1px solid gray;
+        text-align: center;
     }
+
+    img {
+        height: 100%;
+        width: auto;
+        position: relative; 
+        
+    }
+
 </style>
