@@ -1,7 +1,7 @@
 <template>
     <ul class="dogs">
         <li v-for="dog in dogs"
-            v-bind:class"{ dog: true, selected: dog === selected }"
+            v-bind:class="{ dog: true, selected: dog === selected }"
             v-bind:key="dog.name"
             v-on:click="onSelect(dog)">
             <img v-bind:src="dog.image">
@@ -13,7 +13,7 @@
 <script>
 export default {
     props: {
-        dog: Array,
+        dogs: Array,
         selected: Object,
         onSelect: Function
     }

@@ -3,7 +3,7 @@ const dogs = [
         name: 'Barry',
         breed: 'Bernese Mountain',
         color: 'Black/Brown',
-        image: './src/assets/bernese.jpg'
+        image: 'https://commons.wikimedia.org/wiki/File:Bernese_Mountain_Dog_-_9_months.JPG'
     },
     {
         name: 'Sammie',

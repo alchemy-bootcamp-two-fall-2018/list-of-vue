@@ -4,16 +4,31 @@
       v-bind:dogs="dogs"
       v-bind:selected="selected"
       v-bind:onSelect="handleSelect"/>
+    <DogDetail
+      v-bind:dog="selected"/>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue';
+import Dogs from './components/Dogs';
+import DogDetail from './components/DogDetail';
+import dogs from './dog-data';
 
 export default {
-    name: 'app',
+    data() {
+        return {
+            dogs,
+            selected: null
+        };
+    },
     components: {
-        HelloWorld
+        Dogs,
+        DogDetail
+    },
+    methods: {
+        handleSelect(dog) {
+            this.selected = dog;
+        }
     }
 };
 </script>
