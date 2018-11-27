@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <Pokemon 
-    v-bind:pokemon="pokemon"
+    v-bind:pokemons="pokemons"
     v-bind:onSelect="handleSelect"/>
   </div>
 </template>
@@ -22,7 +22,7 @@ export default {
 
     },
     methods: {
-        handleSelect(pokemon){
+        handleSelect(pokemon) {
             this.selected = pokemon;
         }
     }

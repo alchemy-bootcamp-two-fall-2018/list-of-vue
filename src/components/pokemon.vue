@@ -1,7 +1,8 @@
 <template>
     <ul>
-        <pre>{{Pokemon}}</pre>
+        <!--<pre>{{Pokemon}}</pre>-->
         <li v-for="pokemon in pokemons"
+            v-bind:class="{ pokemon: true, selected: pokemon === selected }"
             v-bind:key="pokemon.name"
             v-on:click="onSelect(pokemon)">
             <h3>{{pokemon.name}}</h3>
@@ -15,13 +16,8 @@
 
 export default {
     props: {
-        pokemon:Array,
+        pokemons: Array,
         onSelect: Function
-    },
-    methods: {
-        handleSelect(pokemon) {
-            this.onSelect('selected', pokemon);
-        }
     }    
 };
 </script>
