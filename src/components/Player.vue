@@ -5,6 +5,7 @@
             <p>{{dog.description}}</p>
             <img id="dog-description" v-bind:src="dog.image">
         </div>
+        <div id="dog-player" v-else> You need to choose a doggo! </div>
     </section>
 </template>
 
@@ -28,5 +29,8 @@ p {
     border: 3px solid grey ;
     padding: 10px;
     display: block; 
+}
+#dog-player {
+    text-align: center; 
 }
 </style>

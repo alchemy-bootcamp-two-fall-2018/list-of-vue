@@ -29,7 +29,7 @@ export default {
     }, 
     methods: {
         handleSelect(dog) {
-            this.selected = dog; 
+            this.selected = dog === this.selected ? null : dog; 
         }
     }
 }; 
