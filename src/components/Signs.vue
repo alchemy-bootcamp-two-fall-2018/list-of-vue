@@ -1,5 +1,6 @@
 <template>
     <ul>
+        <pre>{{signs}}</pre>
         <li>
             <img src="https://www.jessicaadams.com/wp-content/uploads/2018/02/Ari18profile.jpg">
             <h2>Aries</h2>
@@ -10,7 +11,7 @@
 <script>
 export default {
     props: {
-        
+        signs: Array
     }
 };
 </script>
@@ -23,10 +24,6 @@ li {
     height: 200px;
     border: 1px solid black;
     text-align: center;
-}
-
-h2 {
-    
 }
 
 img {
