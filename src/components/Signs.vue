@@ -1,9 +1,9 @@
 <template>
     <ul>
-        <pre>{{signs}}</pre>
-        <li>
-            <img src="https://www.jessicaadams.com/wp-content/uploads/2018/02/Ari18profile.jpg">
-            <h2>Aries</h2>
+        <li v-for="sign in signs"
+            :key="sign.name">
+            <img :src="sign.image">
+            <h2>{{sign.name}} from {{sign.date}}</h2>
         </li>
     </ul>
 </template>
