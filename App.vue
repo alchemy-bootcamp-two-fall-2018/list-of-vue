@@ -6,7 +6,7 @@
 <script>
 import runners from '/runners.vue';
 
- export default {
+export default {
     components: {
         runners 
     }
