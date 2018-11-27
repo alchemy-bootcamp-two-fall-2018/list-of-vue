@@ -1,5 +1,6 @@
 <template>
     <ul>
+        <pre>{{races}}</pre>
         <li>
             <h3>Race</h3>
             <img src="../assets/mountainLakes.jpeg"/>
@@ -10,7 +11,9 @@
 <script>
 
 export default {
-
+    props: {
+        races: Array
+    }
 };
 </script>
 

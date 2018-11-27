@@ -1,13 +1,20 @@
 <template>
   <div id="app">
-    hi
-    <Races/>
+    <Races v-bind:races="races"/>
   </div>
 </template>
 
 <script>
 import Races from './components/Races.vue';
+import races from './race-info.js';
+
 export default {
+    data() {
+        return {
+            races,
+            selected: null
+        };
+    },
     components: {
         Races
 
