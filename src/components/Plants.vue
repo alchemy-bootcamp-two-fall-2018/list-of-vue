@@ -1,9 +1,10 @@
 <template>
   <ul class="plants">
-          <pre>{{plants}}</pre>
-    <li>
-      <h3>English Ivy</h3>
-      <img src="https://hgtvhome.sndimg.com/content/dam/images/hgtv/stock/2018/3/shutterstock_683962822_myimagine_english-ivy.jpg.rend.hgtvcom.966.725.suffix/1519229921608.jpeg">
+    <li v-for="plant in plants"
+        v-bind:key="plant.name"
+        v-on:click="onSelect(plant)">
+      <h3>{{plant.name}} rates {{plant.filterNum}} for filter</h3>
+      <img v-bind:src="plant.image">
     </li>
   </ul>
 </template>
@@ -11,11 +12,16 @@
 <script>
 export default {
     props: {
-        plants: Array
+        plants: Array,
+        onSelect: Function
     }
 };
 </script>
 
 <style>
+plants {
+  border: 1px solid #aaaa;
+  text-align: center
+}
 
 </style>

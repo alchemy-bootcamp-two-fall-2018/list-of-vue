@@ -1,6 +1,7 @@
 <template>
   <div id="app">
-    <Plants v-bind:plants="plants"/>
+    <Plants v-bind:plants="plants"
+    v-bind:onSelect="handleSelect"/>
   </div>
 </template>
 
@@ -12,11 +13,17 @@ export default {
     data() {
         return {
             plants,
+            selected: null
         };
     },
     components: {
         Plants
     },
+    methods: {
+        handleSelect(plant) {
+            console.log('selected plant', plant.name);
+        }
+    }
 };
 </script>
 
