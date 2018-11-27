@@ -13,8 +13,12 @@
 
 <script>
 export default {
-
-}
+    props: {
+        dogs: Array,
+        selected: Object,
+        onSelect: Function
+    }
+};
 </script>
 
 <style>
