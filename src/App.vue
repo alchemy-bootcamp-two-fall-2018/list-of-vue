@@ -49,15 +49,4 @@ export default {
   color: #2c3e50;
   margin-top: 60px;
 }
-img{
-  width: 100px;
-  margin: 5%;
-  display: inline-block;
-}
-ul {
-  list-style-type: none;
-}
-.selected {
-  border: 3px solid red;
-}
 </style>
