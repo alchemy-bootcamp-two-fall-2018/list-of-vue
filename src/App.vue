@@ -28,7 +28,7 @@ export default {
     },
     methods: {
         handleSelect(synth) {
-            this.selected = synth;
+            this.selected = synth === this.selected ? null : synth;
             console.log('you selected the', synth.name);
         }
     }
@@ -37,9 +37,14 @@ export default {
 
 <style>
 #app {
-  font-family: Helvetica, Arial, sans-serif;
-  text-align: center;
-  color: purple;
-  margin: 0 auto;
+    font-family: Helvetica, Arial, sans-serif;
+    text-align: center;
+    color: purple;
+    margin: 0 auto;
+    background: linear-gradient(to bottom, rgba(255,195,0,1) 0%,rgba(239,4,231,1) 100%);
+}
+h1 {
+    padding: 15px;
+    margin: 0 auto;
 }
 </style>
