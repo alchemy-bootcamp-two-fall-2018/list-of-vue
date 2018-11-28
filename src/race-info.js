@@ -1,6 +1,6 @@
 const races = [
     {
-        name: 'Mountain Lakes 100',
+        name: 'Mountain Lakes',
         image: 'https://midpackadventures.files.wordpress.com/2015/01/10660334_10152686257772973_1044561749885820137_n.jpg?w=940&h=528',
         distance: ['100 miles'],
         qualifier: 'yes',
@@ -14,14 +14,14 @@ const races = [
         location: 'Oregon'
     },
     {
-        name: 'Zion Ultras & Half Marathon',
+        name: 'Zion Ultra',
         image: 'https://d2goauph7ju525.cloudfront.net/wp-content/uploads/2017/06/ZionNPangels-750.jpg',
         distance: ['100 miler', '100k', '50k', 'half marathon'],
         qualifier: 'yes',
         location: 'Utah'
     },
     {
-        name: 'Waldo 100k Trail Run',
+        name: 'Waldo',
         image: 'http://waldo100k.org/wp-content/uploads/2016/08/20160820.jp_.waldo-finish-45-of-766-X2.jpg',
         distance: ['100k'],
         qualifier: 'yes',
