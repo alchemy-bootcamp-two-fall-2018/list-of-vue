@@ -1,16 +1,16 @@
 <template>
-    <section>
+    <section class="selected">
         <div v-if="race">
             <h2>{{race.name}}</h2>
-            <h3 v-for="distance in race.distance"
+            <h3>Distance</h3>
+            <h4 v-for="distance in race.distance"
                 v-bind:key="distance">
-                {{distance}}
-            </h3>
-            <h3>{{race.location}}</h3>
-            <h3>{{race.qualifier}}</h3>
+                {{distance}}</h4>
+            <h4>{{race.location}}</h4>
+            <h4>{{race.qualifier}}</h4>
         </div>
         <div v-else>
-            Please select a race for more info
+            <h2 id="select">Please select a race for more info</h2>
         </div>
     </section>
 </template>
@@ -23,6 +23,15 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
+#select {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+};
+.selected {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+    border: sold 2px black;
+}
 
-</style>
+</style> 

@@ -6,10 +6,6 @@
             v-on:click="onSelect(race)">
             <img v-bind:src="race.image"/>
             <h3>{{race.name}}</h3>
-            <!-- <h3 v-for="distance in race.distance"
-                v-bind:key="distance">
-                {{distance}}
-            </h3> -->
         </li>
     </ul>
 </template>
@@ -27,23 +23,21 @@ export default {
 
 <style>
     li {
-        display:flex;
+        display: flex;
         flex-direction: column;
         border: solid red;
-        flex-direction: column;
-        height: auto;
-        width: auto;
+        
+        height: 165px;
+        width: 165px;
         margin: 10px;
         text-align: center;
     }
 
     img {
-        position: relative;
-        align-content: center;
-        max-width: 150px;
+        position: center;
+        /* align-content: center; */
+        max-width: 165px;
         height: auto;
-        position: relative; 
-        
     }
 
 </style>
