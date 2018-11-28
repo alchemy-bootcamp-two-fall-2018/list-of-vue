@@ -1,12 +1,15 @@
 <template>
   <div id="app">
+    <raceInfo/>
     <Races v-bind:races="races"/>
+    
   </div>
 </template>
 
 <script>
 import Races from './components/Races.vue';
 import races from './race-info.js';
+import raceInfo from './components/race-selector.vue';
 
 export default {
     data() {
@@ -16,7 +19,8 @@ export default {
         };
     },
     components: {
-        Races
+        Races,
+        raceInfo
 
     }
 };

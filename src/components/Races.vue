@@ -25,16 +25,20 @@ export default {
 
 <style>
     li {
-        display:inline-block;
-        height: 100px;
-        width: 100px;
-        border: 1px solid gray;
+        display:flex;
+        border: solid red;
+        flex-direction: column;
+        height: auto;
+        width: auto;
+        margin: 10px;
         text-align: center;
     }
 
     img {
-        height: 100%;
-        width: auto;
+        position: absolute;
+        align-content: center;
+        max-width: 150px;
+        height: auto;
         position: relative; 
         
     }
