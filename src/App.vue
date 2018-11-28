@@ -1,28 +1,37 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <Cacti 
+        v-bind:cacti="cacti"
+        v-bind:selected="selected"
+        v-bind:onSelect="handleSelect"/>
+    <User
+        v-bind:cactus="selected"/>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
+import Cacti from './components/Cacti';
+//correct dir? lc cacti? refers to file or below component? capitalize Catci.vue & User.vue (also another)
+// also does index.html (the one preloaded in public) get auto created with vue and work? or..
+import User from './components/User';
+//no existy, also see above
+import cacti from './cactus-data';
+//.js?
 export default {
-  name: 'app',
-  components: {
-    HelloWorld
-  }
-}
+    data() {
+        return {
+            cacti,
+            selected: null
+        };
+    },
+    components: {
+        Cacti,
+        User
+    },
+    methods: {
+        handleSelect(cactus) {
+            this.selected = cactus;
+        }
+    }
+};
 </script>
-
-<style>
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
-</style>
