@@ -1,7 +1,9 @@
 <template>
   <div id="app">
-    <raceInfo/>
-    <Races v-bind:races="races"/>
+    <raceSelector v-bind:race="selected"/>
+    <Races v-bind:races="races"
+            v-bind:selected="selected"
+            v-bind:onSelect="handleSelect"/>
     
   </div>
 </template>
@@ -9,7 +11,7 @@
 <script>
 import Races from './components/Races.vue';
 import races from './race-info.js';
-import raceInfo from './components/race-selector.vue';
+import raceSelector from './components/race-selector.vue';
 
 export default {
     data() {
@@ -20,9 +22,14 @@ export default {
     },
     components: {
         Races,
-        raceInfo
-
+        raceSelector
+    },
+    methods: {
+        handleSelect(race) {
+            this.selected = race;
+        }
     }
+
 };
 </script>
 
