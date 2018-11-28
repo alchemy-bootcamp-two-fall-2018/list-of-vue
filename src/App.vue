@@ -1,5 +1,6 @@
 <template>
   <div id="app">
+    <h1>What up Dog?</h1>
     <Dogs
       v-bind:dogs="dogs"
       v-bind:selected="selected"
@@ -36,10 +37,13 @@ export default {
 <style>
 #app {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
+  /* -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
+  margin-top: 60px; */
+}
+h1 {
+    text-align: center;
 }
 </style>

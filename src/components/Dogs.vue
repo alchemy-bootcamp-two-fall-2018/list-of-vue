@@ -21,5 +21,13 @@ export default {
 </script>
 
 <style>
+.dogs {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 
+}
+.dog img {
+    height: 300px;
+}
 </style>
