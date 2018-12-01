@@ -1,11 +1,16 @@
 <template>
-    <section>
+    <section class="detail">
         <div v-if="sign">
-            <h2>{{sign.name}}</h2>
-            <p>From {{sign.date}}</p>
+            <h2 class="detail-title">{{sign.name}}</h2>
             <img :src="sign.image">
+            <p>{{sign.description}}</p>
+            <p>
+                ** Credits: <br>
+                Images from <a href="https://www.jessicaadams.com/" target="_blank">Jesica Adams website</a><br>
+                Moon descriptions from <a href="https://www.forrestastrology.com/blogs/astrology/the-moon-through-the-twelve-signs-by-steven-forrest" target="_blank">Steven Forrest's website</a>
+            </p>
         </div>
-        <div v-else>Please choose a sign.</div>
+        <div class="choose" v-else><strong>Choose a sign</strong></div>
     </section> 
 </template>
 
