@@ -28,7 +28,7 @@ export default {
     },
     methods: {
         handleSelect(sign) {
-            console.log('user selected sign', sign.name);
+            this.selected = sign;
         }
     }
 };

@@ -1,6 +1,6 @@
 <template>
     <section>
-        <div v-if="name">
+        <div v-if="sign">
             <h2>{{sign.name}}</h2>
             <p>From {{sign.date}}</p>
             <img :src="sign.image">
