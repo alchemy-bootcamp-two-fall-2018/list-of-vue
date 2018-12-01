@@ -1,10 +1,9 @@
 <template>
     <section>
         <div>
-            <h2>
-                <p></p>
-                <img src="" alt="">
-            </h2>
+            <!-- <h2>Sign Name</h2>
+                <p>From/to Dates</p>
+                <img src=""> -->
         </div>
     </section> 
 </template>
