@@ -1,10 +1,11 @@
 <template>
     <section>
-        <div>
-            <!-- <h2>Sign Name</h2>
-                <p>From/to Dates</p>
-                <img src=""> -->
+        <div v-if="name">
+            <h2>{{sign.name}}</h2>
+            <p>From {{sign.date}}</p>
+            <img :src="sign.image">
         </div>
+        <div v-else>Please choose a sign.</div>
     </section> 
 </template>
 

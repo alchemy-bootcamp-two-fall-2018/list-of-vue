@@ -4,13 +4,15 @@
             :signs="signs"
             :selected="selected"
             :onSelect="handleSelect" />
-        <Sign/> 
+        <Sign
+            :sign="selected"
+            /> 
     </div>
 </template>
 
 <script>
 import Signs from './components/Signs';
-// import Sign from './components/Sign';
+import Sign from './components/Sign';
 import signs from './signs-data';
 
 export default {
@@ -21,8 +23,8 @@ export default {
         };
     },
     components: {
-        Signs
-        // Sign
+        Signs,
+        Sign
     },
     methods: {
         handleSelect(sign) {
