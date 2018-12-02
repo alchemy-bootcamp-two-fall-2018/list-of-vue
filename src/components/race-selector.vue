@@ -24,14 +24,11 @@ export default {
 </script>
 
 <style scoped>
-#select {
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    text-align: center;
-};
+
 .selected {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     text-align: center;
-    border: sold 2px black;
+    border: solid 2px black;
+   
 }
-
 </style> 

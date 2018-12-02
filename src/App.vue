@@ -26,7 +26,7 @@ export default {
     },
     methods: {
         handleSelect(race) {
-            this.selected = race;
+            this.selected = race === this.selected ? null : race;
         }
     }
 

@@ -22,21 +22,24 @@ export default {
 </script>
 
 <style>
+    ul {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+    }
     li {
-        display: flex;
-        flex-direction: column;
         border: solid red;
-        
-        height: 165px;
-        width: 165px;
-        margin: 10px;
+        height: 175px;
+        width: 175px;
+        margin: 5px;
         text-align: center;
     }
 
     img {
         position: center;
-        /* align-content: center; */
-        max-width: 165px;
+        max-width: 175px;
         height: auto;
     }
 
