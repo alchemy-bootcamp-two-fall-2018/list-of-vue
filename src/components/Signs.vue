@@ -61,4 +61,8 @@ h2 {
     margin-top: 25px;
     font-size: 25px;
 }
+
+.credits {
+    font-size: 11px;
+}
 </style>
