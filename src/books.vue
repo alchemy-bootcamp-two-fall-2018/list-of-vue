@@ -24,6 +24,7 @@ export default {
 .books {
     display: flex;
     flex-wrap: wrap;
+    margin-left: 300px;
 }
 .book {
     list-style: none;
@@ -36,13 +37,12 @@ export default {
     cursor: pointer;
 }
 .book.selected {
-    background: pink;
+    background: grey;
 }
-.book h3 {
-    text-shadow: 1px 1px 1px white;
-}
+
+
 .book img {
-    height: 70%;
+    height: 100px;;
     width: auto;
     position: absolute;
     bottom: 10px;

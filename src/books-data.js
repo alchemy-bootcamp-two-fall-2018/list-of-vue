@@ -1,7 +1,7 @@
 const books = [
     {
         title: 'Skythe',
-        image: 'https://d28hgpri8am2if.cloudfront.net/book_images/onix/cvr9781442472433/scythe-9781442472433_hr.jpg',
+        image: 'https://tessburton.files.wordpress.com/2016/12/scythe-by-neal-shusterman.jpg?w=640',
         author: ' Neal Shusterman'
     },
     {
@@ -10,7 +10,7 @@ const books = [
         author: 'Paul Kalanithi'
     },
     {
-        title: 'Hackers:Heroes of the Computer Revolution',
+        title: 'Hackers',
         image: 'https://images-na.ssl-images-amazon.com/images/I/51Pbo5LEbFL._SX329_BO1,204,203,200_.jpg',
         author: 'Steven Levy'
     }
