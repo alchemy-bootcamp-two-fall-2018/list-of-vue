@@ -1,33 +1,32 @@
 <template>
   <div id="app">
-    <Pirates 
-        v-bind:pirates="pirates"
+    <Books 
+        v-bind:books="books"
         v-bind:selected="selected"
         v-bind:onSelect="handleSelect"/>
     <Player
-        v-bind:pirate="selected"/>
+        v-bind:book="selected"/>
   </div>
 </template>
 
 <script>
-import Pirates from './components/Pirates';
-import Player from './components/Player';
-import pirates from './pirate-data';
+import Books from './Books';
+import Player from './Player';
+import books from './books-data.js';
 export default {
     data() {
         return {
-            pirates,
+            books,
             selected: null
         };
     },
     components: {
-        // Pirates: Pirates
-        Pirates,
+        Books,
         Player
     },
     methods: {
-        handleSelect(pirate) {
-            this.selected = pirate;
+        handleSelect(book) {
+            this.selected = book;
         }
     }
 };
