@@ -1,9 +1,11 @@
 <template>
-    <ul>
+    <ul class="signs">
         <li v-for="sign in signs"
-            :key="sign.name">
+            :class="{ sign: true, selected: sign === selected }"
+            :key="sign.name"
+            @click="onSelect(sign)">
             <img :src="sign.image">
-            <h2>{{sign.name}} from {{sign.date}}</h2>
+            <h2>{{sign.name}}</h2>
         </li>
     </ul>
 </template>
@@ -11,29 +13,56 @@
 <script>
 export default {
     props: {
-        signs: Array
-    }
+        signs: Array,
+        selected: Object,
+        onSelect: Function
+    },
 };
+
 </script>
 
 <style>
-li {
-    position: relative;
-    display: inline-block;
-    width: 200px;
-    height: 200px;
-    border: 1px solid black;
+ul {
+    float: left;
+}
+
+.signs {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+    grid-auto-rows: minmax(150px, auto);
+    /* border: 1px solid black; */
+    list-style: none;
     text-align: center;
+    font-size: 10px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-right: 100px;
 }
 
 img {
-    position: absolute;
-    top: 0; left: 0; right: 0;
-    margin-top: 10px;
-    height: 100%;
-    width: auto;
-    z-index: -1;
-    margin: auto;
+    height: auto;
+    width: 150px;
+    /* border: 1px solid black; */
+    cursor: pointer;
+    text-align: center;
 }
 
+h2 {
+    text-align: center;
+}
+
+.detail, .detail-title {
+    text-align: left;
+    margin-right: 40px;
+}
+
+.choose {
+    margin-top: 25px;
+    font-size: 25px;
+}
+
+.credits {
+    font-size: 11px;
+}
 </style>

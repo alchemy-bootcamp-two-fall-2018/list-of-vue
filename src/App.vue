@@ -1,11 +1,18 @@
 <template>
     <div id="app">
-        <Signs v-bind:signs="signs"/>
+        <Signs
+            :signs="signs"
+            :selected="selected"
+            :onSelect="handleSelect" />
+        <Sign
+            :sign="selected"
+            /> 
     </div>
 </template>
 
 <script>
 import Signs from './components/Signs';
+import Sign from './components/Sign';
 import signs from './signs-data';
 
 export default {
@@ -16,7 +23,13 @@ export default {
         };
     },
     components: {
-        Signs
+        Signs,
+        Sign
+    },
+    methods: {
+        handleSelect(sign) {
+            this.selected = sign;
+        }
     }
 };
 </script>
